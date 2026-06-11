@@ -1,0 +1,35 @@
+# ============================================================
+#  Netflix Project — Python Dependencies
+#  Install with: pip install -r requirements.txt
+# ============================================================
+
+# ------------------------------------------------------------
+# Core data manipulation
+# ------------------------------------------------------------
+pandas>=1.5.0
+numpy>=1.23.0
+
+# ------------------------------------------------------------
+# Visualization — static charts (PNG)
+# ------------------------------------------------------------
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# ------------------------------------------------------------
+# Visualization — interactive charts (HTML)
+# ------------------------------------------------------------
+plotly>=5.11.0
+kaleido>=0.2.1          # required by plotly to export PNG/SVG
+
+# ------------------------------------------------------------
+# Jupyter Notebook environment
+# ------------------------------------------------------------
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.0.0
+
+# ------------------------------------------------------------
+# Optional but recommended
+# ------------------------------------------------------------
+ipywidgets>=8.0.0       # interactive widgets inside notebooks
+nbconvert>=7.0.0        # convert notebook to HTML/PDF for sharing

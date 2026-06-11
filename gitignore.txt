@@ -1,0 +1,142 @@
+# ============================================================
+#  Netflix Project — .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# DATA — never commit raw datasets to Git
+# ------------------------------------------------------------
+data/
+*.csv
+*.tsv
+*.xlsx
+*.json
+!data/.gitkeep          # keeps the empty data/ folder tracked
+
+# ------------------------------------------------------------
+# CHARTS — generated output, reproducible from notebook
+# ------------------------------------------------------------
+charts/
+!charts/.gitkeep        # keeps the empty charts/ folder tracked
+
+# ------------------------------------------------------------
+# JUPYTER NOTEBOOK artifacts
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ------------------------------------------------------------
+# Python environment
+# ------------------------------------------------------------
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------
+# Python compiled / cache files
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# ------------------------------------------------------------
+# Distribution / packaging
+# ------------------------------------------------------------
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+*.whl
+
+# ------------------------------------------------------------
+# Environment variable files — NEVER commit secrets
+# ------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+
+# Kaggle API key — critical, never commit
+kaggle.json
+.kaggle/
+
+# ------------------------------------------------------------
+# OS-generated files
+# ------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# ------------------------------------------------------------
+# IDE / Editor files
+# ------------------------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Spyder
+.spyderproject.cfg
+.spyproject/
+
+# Rope (Python refactoring)
+.ropeproject/
+
+# ------------------------------------------------------------
+# Logs and temp files
+# ------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# ------------------------------------------------------------
+# Pytest / testing
+# ------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ------------------------------------------------------------
+# Documentation build
+# ------------------------------------------------------------
+docs/_build/
+site/
